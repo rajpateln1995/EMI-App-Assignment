@@ -1,5 +1,6 @@
 package com.example.nira.views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -36,6 +37,11 @@ class SelectLendersActivity : AppCompatActivity() {
         binding.value.recyclerView.adapter = adaptor
         viewModel.lendersData.observe(this) {
             adaptor.setData(it)
+        }
+
+        binding.value.aboutUs.setOnClickListener {
+            val intent = Intent(this, AboutUsActivity::class.java)
+            startActivity(intent)
         }
     }
 }

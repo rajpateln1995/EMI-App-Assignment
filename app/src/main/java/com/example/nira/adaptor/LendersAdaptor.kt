@@ -31,12 +31,13 @@ class LendersAdaptor(private var data: List<LenderEntity>):
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.lenderName.text = data[position].lenderName
-        holder.lenderRate.text = data[position].interestRate.toString() + "%"
+        holder.lenderRate.text = data[position].interestRate.toString() + "% / Month"
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, EMICalculateActivity::class.java)
             intent.putExtra(constants.EXTRA_LENDER_NAME , data[position].lenderName)
-            intent.putExtra(constants.EXTRA_INTERESTRATE , data[position].interestRate)
+            intent.putExtra(constants.EXTRA_INTERESTRATE , data[position].interestRate.toString())
+            intent.putExtra(constants.EXTRA_LENDER_ID , data[position].id.toString())
             it.context.startActivity(intent)
         }
     }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/divider_item.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#515151" /> <!-- Set the underline color here -->
+    <size android:height="2dp" /> <!-- Set the height of the underline here -->
+</shape>

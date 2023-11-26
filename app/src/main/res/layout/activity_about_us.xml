@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- [Empowering Dreams, Enabling Futures] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empowering Dreams, Enabling Futures"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <!-- Starting with credit... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starting with credit, NIRA is on a mission to bring relevant and accessible financial products to India’s mass market."
+                android:layout_marginBottom="16dp" />
+
+            <!-- [NIRA is for working India] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIRA is for working India"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Finance plays a part in all our lives... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance plays a part in all our lives. We believe our teachers, nurses, IT managers, constables, hospitality providers, security guards, bank branch workers, retail staff, and small business employees need access to fair finance to create the quality of life they deserve."
+                android:layout_marginBottom="16dp" />
+
+            <!-- [Future Finance] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Future Finance"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Our use of data and technology makes... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our use of data and technology makes what was once impossible, possible. We can now bring new financial products to more people, in more places, than ever before."
+                android:layout_marginBottom="16dp" />
+
+            <!-- [No Tension Life] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Tension Life"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Unexpected or larger than usual expenses... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unexpected or larger than usual expenses are a source of immense stress for millions of Indian households. Local moneylenders were a quick fix, but they are not a solution."
+                android:layout_marginBottom="16dp" />
+
+            <!-- NIRA builds financial empowerment by offering... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIRA builds financial empowerment by offering our customers products that are transparent, respectful, and easy to use."
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

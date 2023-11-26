@@ -1,6 +1,5 @@
 package com.example.nira.database
 
-import android.app.Application
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -26,10 +25,10 @@ abstract class AppDatabase: RoomDatabase() {
 
                     INSTANCE = instance
                     INSTANCE!!.getLenderDao().deleteAll()
-                    val lenders = listOf<LenderEntity>(LenderEntity(lenderName = "ICICI" , interestRate = 12),
-                        LenderEntity(lenderName = "Muthoot Finance" , interestRate = 10),
-                        LenderEntity(lenderName = "HDFC", interestRate = 9),
-                        LenderEntity(lenderName = "IDFC" , interestRate = 8))
+                    val lenders = listOf<LenderEntity>(LenderEntity(lenderName = "ICICI" , interestRate = 2.0, loanAvailed = false),
+                        LenderEntity(lenderName = "Muthoot Finance" , interestRate = 1.3, loanAvailed = false),
+                        LenderEntity(lenderName = "HDFC", interestRate = 1.5 , loanAvailed = false),
+                        LenderEntity(lenderName = "IDFC" , interestRate = 1.7 , loanAvailed = false))
                     INSTANCE!!.getLenderDao().insertLenderDetails(lenders)
                 }
                 return instance

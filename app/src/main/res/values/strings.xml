@@ -9,4 +9,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="tenure">Tenure <font color="@color/pink">%s</font></string>
+    <string name="loan_amount">Loan Amount <font color="@color/pink">%s</font></string>
+    <string name="interest_text">Interest @<font color='@color/pink'>%s%% </font>per month</string>
+    <string name="installment_text">Installment to be paid of ₹%s</string>
 </resources>

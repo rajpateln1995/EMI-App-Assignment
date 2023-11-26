@@ -6,8 +6,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.nira.database.AppDatabase
 import com.example.nira.database.LenderEntity
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class SelectLendersViewModel: ViewModel() {
 
@@ -15,12 +15,9 @@ class SelectLendersViewModel: ViewModel() {
 
     fun fetchData(db: AppDatabase) {
         viewModelScope.launch {
-            with(Dispatchers.IO){
-                db.getLenderDao().getLenders().collect {
-                    lendersData.value = it
-                }
+            db.getLenderDao().getLenders().collect {
+                lendersData.value = it
             }
-
         }
     }
 }
