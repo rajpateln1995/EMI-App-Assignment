@@ -9,6 +9,6 @@ import kotlinx.coroutines.flow.Flow
 interface EMIDao {
     /** return row id of the created data */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun saveEmi(emiData: EMIEntity): Flow<Long>
+    fun saveEmi(emiData: EMIEntity)
 
 }

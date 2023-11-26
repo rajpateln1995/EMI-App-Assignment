@@ -9,12 +9,13 @@ import java.util.Date
 data class EMIEntity (
 
     @PrimaryKey(autoGenerate = true)
-    val id: String,
+    val id: Long,
 
     val totalLoanAmount: Long,
 
     /** tenure in months */
     val tenure: Int,
 
-    val startData: Date
+    /** dd/mm/yyyy */
+    val startDate: String
 )

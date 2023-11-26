@@ -21,6 +21,7 @@ android {
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 
     buildTypes {
@@ -43,6 +44,9 @@ android {
 }
 
 dependencies {
+    implementation("androidx.annotation:annotation:1.6.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     val roomVersion = "2.6.0"
     val activityVersion = "1.8.1"
     val fragmentVersion = "1.6.2"

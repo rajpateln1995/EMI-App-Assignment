@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "LENDER")
 data class LenderEntity (
     @PrimaryKey(autoGenerate = true)
-    val id: String,
+    val id: Long = 0,
 
     val lenderName: String,
 
